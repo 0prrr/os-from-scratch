@@ -19,7 +19,9 @@ int 0x10
 
 mov al, "4" ; fourth attempt to print X
 int 0x10
-mov al, [0x7c2c]
+mov bx, 0x7c00
+add bx, the_secret
+mov al, [bx]
 int 0x10
 
 jmp $
