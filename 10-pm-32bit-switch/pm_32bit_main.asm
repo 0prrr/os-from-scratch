@@ -1,6 +1,6 @@
 [org 0x7c00]
 
-mov bp, 0x800 ; points to new stack (bp * 10H + 0x0 = 0x90000)
+mov bp, 0x800 ; points to new stack (bp * 10H + 0x0 = 0x8000)
 mov sp, bp
 
 mov bx, MSG_REAL_MODE
